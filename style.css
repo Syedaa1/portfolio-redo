@@ -1,1 +1,156 @@
+/* ===== Global Styles ===== */
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9FC2FF;
+    color: #333;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: #4A8CFF;
+    font-family: 'Times New Roman', serif;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.shelter-name {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Times New Roman', serif;
+    color: white;
+    background-color: #4ACSFF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #B59AFC;
+    color: #333;
+    transform: scale(1.05);
+}
+
+/* ===== Main Content & Sections (Background Fixed) ===== */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #e3decf; /* FIXED: Changed background to #e3decf */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+    color: #4A8CFF;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #9FC2FF;
+    margin-top: 25px;
+}
+
+/* ===== Text Styling ===== */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* ===== Images ===== */
+.shelter-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Lists ===== */
+ul, ol {
+    margin-left: 20px;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== Table Styling (Header Color Fixed) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #4A8CFF;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4ACSFF;
+    color: black; /* FIXED: Ensures "Day" and "Hours" text is black */
+}
+
+
+.animal-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+table tr:hover {
+    background-color: #e3decf; /* FIXED: Changed hover background to #e3decf */
+}
+
+
+/* ===== Accessibility: Skip Link ===== */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    padding: 8px;
+    background: #4ACSFF;
+    color: white;
+    z-index: 999;
+    border-radius: 0 0 8px 8px;
+}
+
+.skip-link:focus {
+    left: 0;
+}
